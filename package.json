@@ -16,7 +16,6 @@
     "build": "ncc build src/index.ts --license licenses.txt",
     "prettier": "prettier --write '**/*.{js,ts,json,md}'",
     "prepare": "husky install",
-    "test-prepare": "git push origin :refs/tags/v0.2 && git tag --delete v0.2 && git tag v0.2 master",
     "lint-staged": "lint-staged"
   },
   "lint-staged": {

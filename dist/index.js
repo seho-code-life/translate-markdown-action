@@ -8491,7 +8491,6 @@ __nccwpck_require__.r(__webpack_exports__);
 
 
 try {
-    // `who-to-greet` input defined in action metadata file
     const nameToGreet = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('who-to-greet');
     console.log(`Hello ${nameToGreet}!`);
     const time = new Date().toTimeString();
