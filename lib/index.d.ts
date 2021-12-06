@@ -1,1 +1,1 @@
-export * from '/Users/seho/Desktop/openSource/translate-markdown-action/src/index'
+
