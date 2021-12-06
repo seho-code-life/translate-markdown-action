@@ -1,14 +1,17 @@
-import * as core from '@actions/core';
-import * as github from '@actions/github';
+// import * as core from '@actions/core';
+// import * as github from '@actions/github';
+import fs from 'fs';
+import { translateContent } from './utils';
 
-try {
-  const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
-  const time = new Date().toTimeString();
-  core.setOutput('time', time);
-  // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2);
-  console.log(`The event payload: ${payload}`);
-} catch (error: any) {
-  core.setFailed(error.message);
-}
+// 获取README-CN文件
+const beTranslatedFileName = 'README-CN.md';
+// 注释名
+const flagStart = `<!-- TRANSLATE-ACTION:START -->`;
+const flagEnd = `<!-- TRANSLATE-ACTION:END -->`;
+const readmeData = fs.readFileSync(beTranslatedFileName, 'utf-8');
+translateContent(readmeData, {
+  start: flagStart,
+  end: flagEnd
+}).then((res) => {
+  console.log(res);
+});

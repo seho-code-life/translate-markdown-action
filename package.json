@@ -45,6 +45,9 @@
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.0"
+    "@actions/github": "^5.0.0",
+    "@types/node": "^16.11.11",
+    "@vitalets/google-translate-api": "^7.0.0",
+    "string-replace-async": "^3.0.2"
   }
 }
