@@ -1,3 +1,1 @@
-declare const sum: (a: number, b: number) => number;
-
-export { sum };
+export * from '/Users/seho/Desktop/openSource/translate-markdown-action/src/index'

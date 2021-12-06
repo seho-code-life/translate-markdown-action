@@ -1,32 +1,21 @@
-# rollup-typescript-package
+# Hello world javascript action
 
-- [x] 基础的校验机制，保证代码美观符合生产环境
-- [x] 使用[unbuild](https://github.com/unjs/unbuild)进行打包
+This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
 
-## 命令
+## Inputs
 
-| 命令  | 含义                   |
-| ----- | ---------------------- |
-| build | 并行打包所有类型的 lib |
+## `who-to-greet`
 
-## 技术栈：
+**Required** The name of the person to greet. Default `"World"`.
 
-1. typescript
+## Outputs
 
-## 命令行 🔧
+## `time`
 
-通过安装 Tool，来可视化地使用模板，因为仓库中的模板大多数都不会全部用到，你可以通过 tool 去按需引入它们
+The time we greeted you.
 
-```
-npm i enjoy-project-tool -g
-```
+## Example usage
 
-创建模板
-
-```
-enjoy create
-```
-
-当然，作为模板的伴生工具，我还会继续维护并且持续提出新的 feature 来减轻我们开发负担
-
-Tool 是使用 TS 开发的，如果你感兴趣可以提 pr，这是[Tool 的仓库](https://github.com/seho-code-life/project_tool)
+uses: actions/hello-world-javascript-action@v1.1
+with:
+  who-to-greet: 'Mona the Octocat'

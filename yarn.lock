@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@actions/core@^1.6.0":
+  "integrity" "sha512-NB1UAZomZlCV/LmJqkLhNTqtKfFXJZAUPcfl/zqG7EfsQdeUJtaWO98SGbuQ3pydJ3fHl2CvI/51OKYlCYYcaw=="
+  "resolved" "https://registry.npmjs.org/@actions/core/-/core-1.6.0.tgz"
+  "version" "1.6.0"
+  dependencies:
+    "@actions/http-client" "^1.0.11"
+
 "@actions/github@^5.0.0":
   "integrity" "sha512-QvE9eAAfEsS+yOOk0cylLBIO/d6WyWIOvsxxzdrPFaud39G6BOkUwScXZn1iBzQzHyu9SBkkLSWlohDWdsasAQ=="
   "resolved" "https://registry.npmjs.org/@actions/github/-/github-5.0.0.tgz"
