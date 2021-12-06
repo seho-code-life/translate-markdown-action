@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: seho-code-life/translate-markdown-action@latest
+        uses: seho-code-life/translate-markdown-action@v0.2
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
