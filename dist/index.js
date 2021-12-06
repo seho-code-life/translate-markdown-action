@@ -8500,7 +8500,9 @@ try {
     const payload = JSON.stringify((_actions_github__WEBPACK_IMPORTED_MODULE_1___default().context.payload), undefined, 2);
     console.log(`The event payload: ${payload}`);
 }
-catch (error) { }
+catch (error) {
+    _actions_core__WEBPACK_IMPORTED_MODULE_0___default().setFailed(error.message);
+}
 
 })();
 
