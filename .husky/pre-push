@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+git push origin :refs/tags/v0.2 && git tag --delete v0.2 && git tag v0.2 master
